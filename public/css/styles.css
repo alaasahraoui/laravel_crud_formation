@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  flex: 1;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-container {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+}
+
+.content-container-grid {
+  display: block;
+  height: 1070px;
+}
+
+.header__static {
+  height: 55px;
+  background-color: #03244d;
+}
+
+.header_social {
+  padding-right: 6px;
+}
+
+.header__static .content-container,
+.header__nav .content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.static-header__hours {
+  color: #dd550c;
+  letter-spacing: 0.2em;
+  align-self: center;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 1.15em;
+}
+
+.static-header__links {
+  align-self: center;
+  text-align: right;
+  margin:0;
+  color: rgb(230, 230, 230);
+  letter-spacing: .1em;
+  font-size: 1.5em;
+}
+
+ul li a i:hover {
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition:all .25s ease-out;
+}
+
+li {
+	display:inline;
+	margin:0;
+}
+
+.header__nav {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(230, 230, 230);
+  border-top: #dd550c solid 3px;
+  border-bottom: #dd550c solid 3px;
+}
+
+ul li a i {
+  color: #dd550c;
+  margin-right: 1em;
+}
+
+.nav-header__name,
+.nav-header__nav {
+  align-self: stretch;
+  line-height: 70px;
+  font-family: Chivo;
+}
+
+.nav-header__nav {
+  display: flex;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-self: center
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10000;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 0px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.nav-header__name {
+  letter-spacing: .1em;
+  font-size: 2.75em;
+  color: #03244d;
+  font-weight: bold;
+}
+
+.header-nav__link {
+  height: 85%;
+  width: 120px;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  align-self: center
+}
+
+.dropdown:hover .header-nav__link,
+.header-nav__link:hover {
+  border-bottom: 3px solid #dd550c;
+  color: #dd550c;
+  cursor: pointer;
+  letter-spacing: .1em;
+  transition:all .3s ease-out;
+}
+
+.header-nav__link-name:hover {
+  color: #dd550c;
+  cursor: pointer;
+  letter-spacing: .1em;
+  transition:all .3s ease-out;
+}
+
+.header__jumbotron {
+  height: 350px;
+  overflow: hidden;
+  background-color: #03244d;
+  position: relative;
+  box-shadow: 10px 7px 14px #0000004a;
+}
+
+.header__jumbotron input {
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+}
+
+.jumbotron__content {
+  text-align: right;
+  margin : 0px;
+  width: 600px;
+  color: white;
+  right: 0;
+}
+
+.jumbotron__content h1,
+.jumbotron__content h2 {
+  margin : 0px;
+  padding: 0;
+}
+.jumbotron__content h2 {
+  font-size: .8em;
+}
+
+.jumbotron__logo,
+.jumbotron__content {
+    align-self: center;
+    margin: 0;
+}
+
+
+
+.jumbotron__buttons{
+    text-align: center;
+}
+
+.jumbotron__static-content{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 10%;
+  z-index: 1000;
+}
+
+.item-h h2 {
+  color: rgb(230, 230, 230);
+  font-size: 35px;
+  letter-spacing: .2em;
+  text-align: center;
+  vertical-align: top;
+ 
+}
+
+.item-h p {
+  color: rgb(230, 230, 230); 
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.4em;
+  padding: 0 50px;
+}
+
+#slide-1-trigger {
+  left: 47%;
+}
+
+#slide-2-trigger {
+  left: 50%;
+}
+
+#slide-3-trigger {
+  left: 53%;
+}
+
+input[type='radio']:after {
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #f68026;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: .5px solid white;
+  box-shadow: 0px 0px 2px 0px white inset;
+}
+
+input[type='radio']:checked:after {
+  transition: all 0.3s ease;  
+  transform: scale(1.1);
+  position: relative;
+  background-color: #dd550c;
+} 
+
+.slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding:  8em 1em 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: left 0s .75s;
+}
+
+.slide-one {
+  background-color: white;
+  background-image: url(https://github.com/jtrentpearson/tiger-iron-gym/blob/master/images/background_2.jpg?raw=true);
+}
+
+.slide-two {
+  background-color: black;
+  background-image: url(https://github.com/jtrentpearson/tiger-iron-gym/blob/master/images/background_3.jpg?raw=true);
+}
+
+.slide-three {
+  background-color: firebrick;
+  background-image: url(https://github.com/jtrentpearson/tiger-iron-gym/blob/master/images/background_1.jpg?raw=true);
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.main {
+  background-color: rgb(230, 230, 230);
+  min-height: 100vh;
+}
+
+.container {
+  margin: 50px 0 50px;
+  display: grid;
+  grid: [row1-start] "item-a item-b item-b item-c item-c item-d item-d" auto
+    [row1-end] [row2-start] "item-a item-b item-b item-c item-c item-d item-d"
+    auto [row2-end] [row3-start]
+    "item-e item-f item-f item-g item-g item-g item-g" auto [row3-end]
+    [row4-start] "item-h item-h item-h item-h item-h item-h item-h" auto
+    [row4-end] [row5-start] "item-i item-j item-j item-k item-k item-k item-k"
+    auto [row5-end] / auto;
+  grid-gap: 0.65em;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid-item {
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+}
+
+.item-a {
+  grid-area: item-a;
+  background-color: #03244d;
+}
+.item-b {
+  grid-area: item-b;
+  background-image: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fgreatist.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fbig_share%2Fpublic%2Fhiit-workout_0.jpg%3Fitok%3DYJ3oSuGZ&f=1");
+  background-size: cover;
+}
+.item-c {
+  grid-area: item-c;
+  background-image: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn-mf1.heartyhosting.com%2Fsites%2Fmensfitness.com%2Ffiles%2Fthe_10-minute_belly-off_workout_main.jpg&f=1");
+  background-size: cover;
+}
+.item-d {
+  grid-area: item-d;
+  background-image: url("https://images.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.self.com%2Fphotos%2F5867a314bf5e49f716efe864%2Fmaster%2Fpass%2Fworkout-package_1.png&f=1");
+  background-size: cover;
+  background-position: center;
+}
+.item-e {
+  grid-area: item-e;
+  background-color: #dd550c;
+}
+.item-f {
+  grid-area: item-f;
+  background-image: url(https://image.shutterstock.com/z/stock-photo-handsome-man-doing-biceps-lifting-barbell-on-bench-in-a-gym-577492996.jpg);
+  background-size: cover;
+}
+
+.item-g {
+  grid-area: item-g;
+  background-image: url(https://image.shutterstock.com/z/stock-photo-men-with-battle-rope-in-functional-training-fitness-gym-363373637.jpg);
+  background-size: cover;
+}
+
+.item-h {
+  grid-area: item-h;
+  background-image: url(https://image.shutterstock.com/z/stock-photo-dumbbell-illustration-with-artistic-rim-lightning-274761698.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 60% 40%;
+  padding: 0 10px;
+}
+
+.item-i {
+  grid-area: item-i;
+  background-color: #03244d;
+}
+.item-j {
+  grid-area: item-j;
+  background-image: url(https://image.shutterstock.com/z/stock-photo-handsome-weightlifter-preparing-for-training-shallow-depth-of-field-selective-focus-on-hands-and-366605333.jpg);
+  background-size: cover;
+}
+.item-k {
+  grid-area: item-k;
+  background-image: url(https://image.shutterstock.com/z/stock-photo-young-man-and-woman-wearing-training-hardly-on-cycling-machines-in-light-spacious-gym-564014422.jpg);
+  background-size: cover;
+}
+
+.grid-item__drop-down {
+  padding: 0 10px;
+  position: relative;
+  top: 200px;
+  widows: 100%;
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  color: white;
+  text-align: center;
+}
+
+.grid-item__drop-down h2 {
+  margin: 0px;
+  padding: 8px;
+}
+
+.grid-item__drop-down p {
+  line-height: 1.35em;
+}
+
+.grid-item__drop-down:hover {
+  top: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer {
+  position: relative;
+  height: 300px;
+  background-color: #03244d;
+}
+
+.footer__links {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: -50px;
+  overflow: hidden;
+  height: 120px;
+
+}
+
+.footer__topnav {
+  line-height:30px;
+  width: 250px;
+  height: 100px;
+  background-color: #dd550c;
+  text-align: center;
+  color: rgb(230, 230, 230);
+  top: 50px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: .8em;
+  transition: all .3s ease;
+}
+
+.footer__topnav:hover {
+  top: 33px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.footer__topnav:hover p{
+  color: rgb(230, 230, 230);
+  transition: all .3s ease;
+}
+
+.footer__topnav h2 {
+  top: -4;
+  position: relative;
+  z-index: 10;  
+  margin-bottom: 0;
+}
+
+.footer__topnav p {
+  color: #dd550c;
+  margin: 0;
+}
+
+.footer__topnav--b p {
+  color: #f68026  ;
+}
+
+.footer__topnav--b {
+  background-color: #f68026
+}
+
+.footer__topnav--circle {
+  position: absolute;
+  top: -24px;
+  left: 100px;
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 50%;  /* 100px of height + 10px of border */
+  border-top-right-radius: 50%;
+  background-color: inherit;
+  z-index: 1;
+}
+
+.footer__bottomnav {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 2em;
+}
+
+.footer__bottomnav {
+  margin-bottom: 0;
+}
+.footer__bottomnav ul {
+  padding: 0;
+}
+
+.footer__info {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__info ul {
+  padding: 0;
+}
+
+.footer__info ul li {
+  color: rgb(230, 230, 230);
+  display: block;
+  letter-spacing: .05em;
+  line-height: 1.7em;
+  margin: auto;
+  font-size: .85em;
+}
+
+.gym-info {
+  text-align: left;
+}
+
+.other-info {
+  text-align: center;
+}
+.womens-gym-info {
+  text-align: right;
+}
+
+.footer .content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa {
+  margin: .65em;
+}

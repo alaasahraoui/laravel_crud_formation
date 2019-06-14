@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Formation ;
 use DB;
 class FormationController extends Controller
-{
+{          
     /**
      * Display a listing of the resource.
      *
